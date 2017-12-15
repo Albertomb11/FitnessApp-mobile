@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by Alberto on 14/12/2017.
  */
 
-public class Ejercicio implements Serializable{
+public class Fitness implements Serializable {
 
     private int id;
     private String imagen;
@@ -82,7 +82,7 @@ public class Ejercicio implements Serializable{
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return nombre;
     }
 }

@@ -8,15 +8,15 @@
 
     <ImageView
         android:id="@+id/fitness_logo_imagen_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/fitness_name"
-        app:srcCompat="@drawable/fitness_logo"/>
+        />
 
     <TextView
         android:id="@+id/fitness_name_text_view"

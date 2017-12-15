@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.alberto.fitnessapp.model.Ejercicio;
+import com.alberto.fitnessapp.model.Fitness;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.loopj.android.http.AsyncHttpClient;
@@ -22,16 +22,16 @@ import cz.msebera.android.httpclient.Header;
 public class MainActivity extends AppCompatActivity {
 
     ListView mListViewFitness;
-    ArrayList<Ejercicio> mListaFitness = new ArrayList<>();
+    ArrayList<Fitness> mListaFitness = new ArrayList<>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mListViewFitness = findViewById(R.id.list_view_fitness);
 
-        final ArrayAdapter<Ejercicio> adapter = new ArrayAdapter<Ejercicio>(
+        final ArrayAdapter<Fitness> adapter = new ArrayAdapter<Fitness>(
                 this,
                 R.layout.list_item_ejercicio,
                 R.id.text_view_ejercicios,
@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(int statusCode, Header[] headers, String responseString) {
                         Log.d("MainActivity", "OK->Response:" + responseString);
                         Gson gson = new GsonBuilder().create();
-                        Ejercicio[] ejercicios = gson.fromJson(responseString, Ejercicio[].class);
+                        Fitness[] fitne = gson.fromJson(responseString, Fitness[].class);
                         adapter.clear();
-                        for (Ejercicio ejercicio: ejercicios){
-                            adapter.add(ejercicio);
+                        for (Fitness fitness : fitne){
+                            adapter.add(fitness);
                         }
                     }
                 });
