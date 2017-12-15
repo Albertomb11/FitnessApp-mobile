@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="titulo_text_view">Ejercicios</string>
+    <string name="text_view_ejercicioList">Ejercicios</string>
+    <string name="text_view_ejercicios">Ejercicios</string>
+    <string name="fitness_name">Nombre</string>
+    <string name="fitness_nombre">Nombre Ejercicio</string>
+    <string name="categoria_label">Categoria:</string>
+    <string name="fitness_categoria">Fitness Categoria</string>
+    <string name="posicion_label">Posicion:</string>
+    <string name="fitness_posicion">Fitness Posicion</string>
+    <string name="ejecucion_label">Ejecucion:</string>
+    <string name="fitness_ejecucion">Fitness Ejecucion</string>
+    <string name="text_view_fitnesslist">Ejercicios</string>
+</resources>
